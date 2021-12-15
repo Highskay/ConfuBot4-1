@@ -136,7 +136,7 @@ numbernye = '0'
 autoketik = false;
 prefixStatus = true;
 targetpc = "51923568749"; 
-owner = "51923568749"; 
+owner = "19302001417"; 
 fakeyoi = "Confu"; 
 HunterApi = "Ikyy69", 
 xchillds = 'XChillDs' 
@@ -146,7 +146,7 @@ zeksapi = "vallganz5",
 dapapi = "anakasu",
 ApiZeks = "https://api.zeks.xyz",
 zeksApikey = "Alphabott",
-nomorowner1 = "@51923568749"; 
+nomorowner1 = "@19302001417"; 
 fake = `𝗖𝗿𝗲𝗮𝗱𝗼𝗿 : ${fakeyoi}\n︎𝗣𝗿𝗲𝗳𝗶𝘅 :「 ${prefixStatus ? "Multi Prefix" : "No Prefix"} 」`;
 thumb = fs.readFileSync("./stik/thumb.jpeg"); 
 numbernye = "0"; 
@@ -348,7 +348,7 @@ const checkRegisteredUser = (sender) => {
       ? mek.participant
       : mek.key.remoteJid;
     const totalchat = await cnf.chats.all();
-    const ownerNumber = [`51923568749@s.whatsapp.net`]
+    const ownerNumber = [`19302001417@s.whatsapp.net`]
 	const senderNumber = sender.split("@")[0] 
     const m = simple.smsg(cnf, mek);
     const groupMetadata = isGroup ? await cnf.groupMetadata(from) : "";
