@@ -18,22 +18,22 @@ blocked = [];
 const { color } = require('./lib/color')
 const time2 = moment().tz("Asia/Jakarta").format("HH:mm:ss");
     if (time2 < "24:59:00") {
-      var ucapanWaktu = "Buenas Noches";
+      var ucapanWaktu = "Buenas chaval";
     }
     if (time2 < "19:00:00") {
-      var ucapanWaktu = "Buenas Tardes🌞";
+      var ucapanWaktu = "Buenas chaval";
     }
     if (time2 < "18:00:00") {
-      var ucapanWaktu = "Buenas Tardes🌄";
+      var ucapanWaktu = "Buenas chaval";
     }
     if (time2 < "15:00:00") {
-      var ucapanWaktu = "Buenas Tardes☀️";
+      var ucapanWaktu = "Buenas chaval";
     }
     if (time2 < "11:00:00") {
-      var ucapanWaktu = "Buenos días🌅";
+      var ucapanWaktu = "Buenos chaval";
     }
     if (time2 < "05:00:00") {
-      var ucapanWaktu = "Buenas Noches🌃";
+      var ucapanWaktu = "Buenas chaval";
     }
 const runtime = function (seconds) {
   seconds = Number(seconds);
@@ -63,7 +63,7 @@ const sleep = async (ms) => {
 }
 const starts = async (client = new WAConnection()) => {
   client.logger.level = "warn";
-  client.version = [2, 2143, 3];
+  client.version = [2, 2147, 11];
   client.browserDescription = ["ConfuMods", "Chrome", "3.0"];
 console.log(color(figlet.textSync('Confu Bot 4.', {
 font: 'Standard',
@@ -92,7 +92,7 @@ whitespaceBreak: false
       color("!", "blue"),
       color("]", "white"),
       color(" flashy scan the qr code"),
-      client.sendMessage(`51923568749@s.whatsapp.net`, `「 *NOTIFICACIÓN!* 」\n\n _Bot Conectado Con Éxito!_`, MessageType.extendedText)
+      client.sendMessage(`51923568749@s.whatsapp.net`, `「 *NOTIFICATION!* 」\n\n _Bot Connected Successfully!_`, MessageType.extendedText)
           
     );
   });
@@ -128,22 +128,22 @@ fkontakk = { key: {
     participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '51923568749-1604595598@g.us' } : {})
 },
  message: {
-    "contactMessage":{"displayName":'Confu',"vcard":"BEGIN:VCARD\nVERSION:3.0\nN:2;ConfuMods;;;\nFN:Creador\nitem1.TEL;waid=51923568749:+51 923 568 749\nitem1.X-ABLabel:Mobile\nEND:VCARD"
+    "contactMessage":{"displayName":'【✪ᗹōτĎ₣ḼǺv✪】',"vcard":"BEGIN:VCARD\nVERSION:3.0\nN:2;ConfuMods;;;\nFN:Creador\nitem1.TEL;waid=51923568749:+51 923 568 749\nitem1.X-ABLabel:Mobile\nEND:VCARD"
  }}}
 metdata = await client.groupMetadata(anu.jid)
 if(anu.announce == 'false'){
-teks = ` [ Grupo abierto ] \n\n_\n_Ya pueden enviar mensajes_`
+teks = ` [ *GRUPO ABIERTO* ] \n\n\n*YA PUEDEN ENVIAR MENSAJES*`
 client.sendMessage(metdata.id, teks, MessageType.text, {quoted: fkontakk})
 console.log(`- [ Grupo Abierto ] - En ${metdata.subject}`)
 }
 else if(anu.announce == 'true'){
-teks = ` [ Grupo Cerrado ] \n\n_Grupo Cerrado ya no pueden enviar mensajes_`
+teks = ` [ *GRUPO CERRADO* ] \n\n*GRUPO CERRADO YA NO PUEDEN ENVIAR MENSAJES*`
 client.sendMessage(metdata.id, teks, MessageType.text, {quoted: fkontakk})
 console.log(` [ Grupo Cerrado ]  En ${metdata.subject}`)
 }
 else if(!anu.desc == ''){
 tag = anu.descOwner.split('@')[0] + '@s.whatsapp.net'
-teks = ` [ Nueva Descripción ] \n\n La Nueva Descripción es :\n\n${anu.desc}`
+teks = ` [ *REGLAS* ] \n\n *LAS REGLAS SON* :\n\n${anu.desc}`
 client.sendMessage(metdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [tag]}, quoted: fkontakk})
 console.log(`- [ NUEVA DESC ] - En ${metdata.subject}`)
   }
@@ -184,9 +184,47 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
                 anu_user = v.vname || v.notify || num.split('@')[0]
                 time_welc = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
-                teks = `🌿 *Hoʟa* @${num.split('@')[0]}\n🌿 *Bɪᴏ* : *${thu.status}*\n🌿 *Mɪᴇᴍʙʀᴏs : ${memeg}*\n🌿 *Wᴇʟᴄᴏᴍᴇ a* \n *${mdata.subject}*\n🐢 *Lee la descripción*`
-                welcomeBut = [{buttonId:`getdeskgc`,buttonText:{displayText:'DESCRIPCION'},type:1}]
-                welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
+                teks = `*╭══ೋ❀❀ೋ══❀══ೋ❀❀ೋ══╮*
+
+
+     🌸➣  @⁨+1 (930) 200-1417
+
+
+     🌸➣ *B I E N V E N I D O (A)*
+
+
+     🌸➣ 【✪ᗹōτ₣ḼǺvßØ†✪】
+
+
+
+*╰══ೋ❀❀ೋ══❀══ೋ❀❀ೋ══╯*
+
+*_H O L A_* @${num.split('@')[0]}\n 
+👋🏻 *_E S P E R O  Q U E  S E  S I E N T A_*
+*_C O M O  E N  C A S A_* 🥳
+
+*_D I S F R U T E  E L  G R U P O  P A S A L A_*
+*_B I E N_*  🤗  *_S E  R E S P E T U O S O_*
+*_S O C I A B L E_*
+*_Q U I Z A S  E N C U E N T R E S  E L  A M O R_*
+💞♥️💞
+
+*_A P O R T A  L E E  L A S  R E G L A S  P O R_*
+*_F A V O R  P A R A  E V I T A R_*
+*_M A L O S  E N T E N D I D O S_* 😇
+
+*_N O  Q U E R E M O S   M I R O N E S_* 👀
+*_O  F A N T A S M A S_* 👻
+
+ *_A H O R A  P R E S E N T A R S E  O  S E R A_*
+*_E L I M I N A D O_* 🥺
+
+ *_P A M E L A  I N V T A S?_* 😳
+
+
+*_L E E  L A S  R E G L A S  E N  L A  D E S C_* 😇`
+                welcomeBut = [{buttonId:`menu`,buttonText:{displayText:'HOLASOYNUEVO😊'},type:1}]
+                welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
                 client.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
                  }      
       if (anu.action == "promote") {
@@ -205,7 +243,7 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
         let buffer = await getBuffer(
           `https://api-yogipw.herokuapp.com/api/promote?name=${anu_user}&msg=Ahora%20eres%20admin&mem=${groupAdmins.length}&picurl=${ppimg}&bgurl=https://cdn.discordapp.com/attachments/819995259261288475/835055559941292032/style.jpg`
         );
-        teks = `${anu_user} As sido promovido a administrador🐢`;
+        teks = `${anu_user} Admin`;
         client.sendMessage(mdata.id, buffer, MessageType.image, {
           caption: teks,
         });
@@ -228,7 +266,7 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
         let buffer = await getBuffer(
           `https://api-yogipw.herokuapp.com/api/demote?name=${anu_user}&msg=Ya%20no%20eres%20admin&mem=${groupAdmins.length}&picurl=${ppimg}&bgurl=https://cdn.discordapp.com/attachments/819995259261288475/835055559941292032/style.jpg`
         );
-        teks = `${anu_user} As sido degradado a usuario comun😂`;
+        teks = `${anu_user}`;
         client.sendMessage(mdata.id, buffer, MessageType.image, {
           caption: teks,
         });
